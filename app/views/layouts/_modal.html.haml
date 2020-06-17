@@ -15,18 +15,22 @@
     - @foods.each do |food|
       %li.modal_foods__index__list
         .modal_foods__index__list__name
-          = food
+          = food.name
         %ul.modal_foods__index__list__data
-          - @data.each do |data|
-            %li.modal_foods__index__list__data--num
-              = data
+          %li.modal_foods__index__list__data--num
+            = food.calorie
+          %li.modal_foods__index__list__data--num
+            = food.carbo
+          %li.modal_foods__index__list__data--num
+            = food.fat
+          %li.modal_foods__index__list__data--num
+            = food.protein
         .modal_foods__index__list__remove
           = link_to "#" do
             = icon 'fas', 'plus-circle', class: 'remove'
   .modal_foods__new
-    新しいフードを
     = link_to "#", class:"link" do
-      データーベースに追加
+      新しいフードを追加
 
 .modal_new
   .modal_new__top
