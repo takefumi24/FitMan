@@ -13,7 +13,8 @@
     - @meals.each do |meal|
       .foods_main_content
         .foods_main__meal
-          = meal
+          = meal[:name]
+        %ul{class:"foods_main__foods", id:"foods#{meal[:id]}"}
         -# %ul.foods_main__foods
         -#   - @foods.each do |food|
         -#     %li.foods_main__food
@@ -28,7 +29,7 @@
         -#             = icon('fas', 'minus-circle', class: 'remove')
         .foods_main__total
           .foods_main__total__add
-            = link_to "#",class:"add" do
+            = link_to "#",class:"add", id:"add#{meal[:id]}" do
               フード追加
           %ul.foods_main__total__data
             %li.foods_main__total__data--num
