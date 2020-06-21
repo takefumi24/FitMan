@@ -70,4 +70,9 @@ $(function () {
     $(removeList).remove();
     $('.fa-minus-circle').off();
   })
+  // 追加されているフードの数値計算
+  let addFoodCalculate = document.getElementsByClassName('modal_foods__index__list__data--num');
+  console.log(addFoodCalculate);
+  let text = addFoodCalculate[0].innerHTML;
+  console.log(text);
 });
