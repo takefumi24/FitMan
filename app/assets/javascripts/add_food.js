@@ -6,17 +6,17 @@ $(function () {
                       <div class="foods_main__name">
                         ${data.name}
                       </div>
-                      <ul class="modal_foods__index__list__data" id="nutrition6">
-                        <li class="modal_foods__index__list__data--num">
+                      <ul class="foods_main__index" id="nutrition6">
+                        <li class="foods_main__index">
                           ${data.calorie}
                         </li>
-                        <li class="modal_foods__index__list__data--num">
+                        <li class="foods_main__index--num">
                           ${data.carbo}
                         </li>
-                        <li class="modal_foods__index__list__data--num">
+                        <li class="foods_main__index--num">
                           ${data.fat}
                         </li>
-                        <li class="modal_foods__index__list__data--num">
+                        <li class="foods_main__index--num">
                           ${data.protein}
                         </li>
                         <div class="foods_main__remove">
@@ -24,7 +24,7 @@ $(function () {
                         </div>
                       </ul>
                     </li>
-                    `
+                    `;
     return food_list;
   }
 
