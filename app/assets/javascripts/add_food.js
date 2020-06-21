@@ -50,8 +50,8 @@ $(function () {
       let food_list = buildHTML(data);
       let mealId = "#foods" + addId;
       $(mealId).append(food_list);
-      $(".modal-overlay").fadeOut("fast");
-      $(".modal_foods").fadeOut("fast");
+      // $(".modal-overlay").fadeOut("fast");
+      // $(".modal_foods").fadeOut("fast");
     });
 
   });
