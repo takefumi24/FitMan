@@ -56,11 +56,18 @@ $(function () {
 
   });
 
-      name   :document.getElementById('name' + food_id).innerHTML,
   // モーダルを閉じる
   $(".modal-overlay").click(function () {
     $(".modal-overlay").fadeOut("fast");
     $(".modal_foods").fadeOut("fast");
     $(".modal_new").fadeOut("fast");
   });
+
+  // 削除ボタンクリック
+  $(document).on("click", ".fa-minus-circle", function(e){
+    e.preventDefault();
+    let removeList = $(this).parents('.foods_main__food')
+    $(removeList).remove();
+    $('.fa-minus-circle').off();
+  })
 });
