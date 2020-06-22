@@ -4,9 +4,9 @@ $(function () {
   $(document).on("click", ".fa-minus-circle", function (e) {
     e.preventDefault();
     // どの食事から削除するか指定
-    let removeList = $(this).parents('.foods_main__food')
+    let removeList = $(this).parents('.foods_main__food');
     $(removeList).remove();
-    $('.fa-minus-circle').off()
+    $('.fa-minus-circle').off();
 
     // 削除する食事のidの取得
     if (this.className.includes('meal1minus')) {
@@ -20,16 +20,16 @@ $(function () {
     }
 
     // 数値の取得
-    let calories = document.getElementsByClassName('meal' + id + 'calorie')
-    let carbos = document.getElementsByClassName('meal' + id + 'carbo')
-    let fats = document.getElementsByClassName('meal' + id + 'fat')
-    let proteins = document.getElementsByClassName('meal' + id + 'protein')
+    let calories = document.getElementsByClassName('meal' + id + 'calorie');
+    let carbos = document.getElementsByClassName('meal' + id + 'carbo');
+    let fats = document.getElementsByClassName('meal' + id + 'fat');
+    let proteins = document.getElementsByClassName('meal' + id + 'protein');
 
     // 合計を出す
-    let sumCalorie = 0
-    let sumCarbo = 0
-    let sumFat = 0
-    let sumProtein = 0
+    let sumCalorie = 0;
+    let sumCarbo = 0;
+    let sumFat = 0;
+    let sumProtein = 0;
     for (let i = 0; i < fats.length; i++) {
       sumCalorie += Number(calories[i].textContent)
       sumCarbo += Number(carbos[i].textContent)
@@ -38,11 +38,11 @@ $(function () {
     }
 
     // 削除先の食事を指定
-    let mealTotal = '#meal' + id
-    let calorieTotal = $(mealTotal).children('.data_calorie')
-    let carboTotal = $(mealTotal).children('.data_carbo')
-    let fatTotal = $(mealTotal).children('.data_fat')
-    let proteinTotal = $(mealTotal).children('.data_protein')
+    let mealTotal = '#meal' + id;
+    let calorieTotal = $(mealTotal).children('.data_calorie');
+    let carboTotal = $(mealTotal).children('.data_carbo');
+    let fatTotal = $(mealTotal).children('.data_fat');
+    let proteinTotal = $(mealTotal).children('.data_protein');
 
     // 合計の表示
     $(calorieTotal).text(sumCalorie);
