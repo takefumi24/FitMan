@@ -79,9 +79,6 @@ $(function () {
       $(carboTotal).text(sumCarbo);
       $(fatTotal).text(sumFat);
       $(proteinTotal).text(sumProtein);
-      // // フード追加ごとにモーダルを削除するか検討中
-      // $('.modal-overlay').fadeOut("fast");
-      // $('.modal_foods').fadeOut("fast");
 
     })
   })
