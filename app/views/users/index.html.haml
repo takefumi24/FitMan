@@ -16,24 +16,24 @@
     .main__center
       .main__center__content
         .main__center__content--image
+          = image_tag "food.jpg", size:"140x140", class:"icon"
+        .main__center__content--name
+          フード登録
+        .main__center__content--text
+          食べ物を選択するだけで簡単に一日の摂取カロリーが分かります。
+        .main__center__content--btn
+          = link_to foods_path do
+            %button.btn フード登録へ
+      .main__center__content
+        .main__center__content--image
           = image_tag "dentaku.jpg", size:"140x140", class:"icon"
         .main__center__content--name
           カロリー計算
         .main__center__content--text
-          食べ物を選択するだけで簡単に一日の摂取カロリーの計算ができます。
-        .main__center__content--btn
-          = link_to foods_path do
-            %button.btn カロリー計算へ
-      .main__center__content
-        .main__center__content--image
-          = image_tag "goal.jpg", size:"140x140", class:"icon"
-        .main__center__content--name
-          目標達成
-        .main__center__content--text
           消費カロリー・目標体重・目標期間から、必要なカロリー摂取量を計算します。
         .main__center__content--btn
           = link_to calculation_records_path do
-            %button.btn 目標達成へ
+            %button.btn カロリー計算へ
       .main__center__content
         .main__center__content--image
           = image_tag "diary.jpg", size:"140x140", class:"icon"
