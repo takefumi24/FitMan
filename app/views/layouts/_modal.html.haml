@@ -17,7 +17,7 @@
         .modal_foods__index__list__name{id:"name#{food.id}"}
           = food.name
         .modal_foods__index__list__num
-          = select_tag 'quantity', options_for_select([*1..9]), class:"quantity_select", id:"quantity#{food.id}"
+          = select_tag 'quantity', options_for_select([*1..9]), class:"quantity_select", id:"serving#{food.id}"
         .modal_foods__index__list__serving
           人前：
         .modal_foods__index__list__quantity{id:"quantity#{food.id}"}
