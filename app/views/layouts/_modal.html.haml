@@ -20,7 +20,7 @@
           = select_tag 'quantity', options_for_select([*1..9]), class:"quantity_select", id:"quantity#{food.id}"
         .modal_foods__index__list__serving
           人前：
-        .modal_foods__index__list__quantity
+        .modal_foods__index__list__quantity{id:"quantity#{food.id}"}
           = food.quantity
         %ul.modal_foods__index__list__data{id:"nutrition#{food.id}"}
           %li.modal_foods__index__list__data--num
