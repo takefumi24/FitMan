@@ -4,6 +4,7 @@
     background-color: $top_color;
     text-align: right;
     padding-right: 30px;
+    text-align: right;
   .link {
       line-height: 30px;
       color: white;
@@ -12,5 +13,10 @@
       cursor: pointer;
     }
 
+    .home {
+      line-height: 30px;
+      color: white;
+      font-size: 20px;
+    }
   }
 }
