@@ -37,6 +37,10 @@ $(function () {
     // 追加ボタンクリック
     $(document).on("click", ".fa-plus-circle", function (e) {
       e.preventDefault();
+
+      let serving = Number($(".modal_foods__index__list__num").val());
+      console.log(serving);
+
       let foodId = this.id;
       let nutrition = document.getElementById('nutrition' + foodId).children;
       let data = {
