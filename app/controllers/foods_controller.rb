@@ -2,6 +2,11 @@ class FoodsController < ApplicationController
   before_action :create_hash
   def index
     @foods = Food.all
+    @datas = @foods.search(params[:keyword])
+    respond_to do |format|
+      format.json
+      format.html
+    end
   end
 
   def create
