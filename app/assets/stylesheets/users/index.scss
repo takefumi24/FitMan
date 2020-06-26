@@ -132,7 +132,7 @@
       height: 100%;
       background-color: $sub_color;
       padding-top: 50px;
-      padding-bottom: 100px;
+      padding-bottom: 90px;
       &__top {
         color: $font_color;
         text-align: center;
@@ -142,10 +142,10 @@
       }
       &__center {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 20px;
         &__content {
           width: 150px;
-          margin: 30px auto 60px;
+          margin: 30px auto 80px;
           &--image {
             height: 150px;
             width: 150px;
@@ -171,7 +171,7 @@
             font-size: 12px;
           }
           &--btn {
-            margin-top: 20px;
+            margin-top: 10px;
 
             .btn {
               width: 130px;
