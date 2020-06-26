@@ -112,5 +112,6 @@ $(function () {
     $('.modal_foods').fadeOut("fast");
     $('.modal_new').fadeOut("fast");
     $("form")[0].reset();
+    $("#new_food_registration").off();
   })
 });
