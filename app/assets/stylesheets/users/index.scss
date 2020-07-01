@@ -72,8 +72,10 @@
             font-weight: bold;
           }
           &--text {
+            width: 240px;
             margin-top: 20px;
             color: $font_color;
+            text-align: left;
           }
           &--btn {
             margin-top: 40px;
@@ -113,11 +115,12 @@
           &--top {
             font-size: 30px;
             font-weight: bold;
+            text-align: center;
           }
           &--center {
             margin-top: 10px;
-            margin-left: 10px;
             font-size: 13px;
+            text-align: center;
           }
         }
         &__right {
@@ -169,6 +172,7 @@
             margin-top: 10px;
             color: $font_color;
             font-size: 12px;
+            text-align: left;
           }
           &--btn {
             margin-top: 10px;
