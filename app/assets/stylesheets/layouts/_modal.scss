@@ -20,7 +20,7 @@
   color: black;
   height: 510px;
   width: 350px;
-  background-color: $main_back;
+  background-color: rgba(255,255,255,0.897);
   margin: 0;
   padding: 0;
   position:fixed;
@@ -63,7 +63,7 @@
 @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
   .modal_foods {
     color: black;
-    background-color: $main_back;
+    background-color: rgba(255,255,255,0.897);
     height: 500px;
     width: 700px;
     margin: 0;
@@ -174,19 +174,17 @@
       .link {
         text-decoration: none;
         color: $top_color;
+        margin-left: 75px;
       }
     }
   }
-
   .modal_new {
     color: black;
-    background-color: $main_back;
+    background-color: rgba(255,255,255,0.897);
     height: 450px;
     width: 500px;
     position:fixed;
     z-index: 3;
-    top:0;
-    left:0;
     display:none;
     &__top {
       height: 50px;
@@ -246,17 +244,16 @@
   }
 }
 
+
 // スマホ用
 @media screen and (max-width: 766px) { /*ウィンドウ幅が最大766pxまでの場合に適用*/
   .modal_foods {
     color: black;
-    background-color: $main_back;
+    background-color: rgba(255,255,255,0.897);
     height: 500px;
     width: 350px;
     margin: 0;
     padding: 0;
-    top:0;
-    left:0;
     position:fixed;
     z-index: 2;
     display:none;
@@ -366,19 +363,18 @@
       .link {
         text-decoration: none;
         color: $top_color;
+        margin-left: 85px;
       }
     }
   }
 
   .modal_new {
     color: black;
-    background-color: $main_back;
+    background-color: rgba(255,255,255,0.897);
     height: 450px;
     width: 350px;
     position:fixed;
     z-index: 3;
-    top:0;
-    left:0;
     display:none;
     &__top {
       height: 50px;
