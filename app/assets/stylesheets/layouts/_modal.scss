@@ -177,6 +177,16 @@
         margin-left: 75px;
       }
     }
+
+    &__close{
+      width: 280px;
+      margin: 20px auto;
+      &__bottun{
+        text-decoration: none;
+        color: $top_color;
+        margin-left: 115px;
+      }
+    }
   }
   .modal_new {
     color: black;
@@ -364,6 +374,15 @@
         text-decoration: none;
         color: $top_color;
         margin-left: 85px;
+      }
+    }
+    &__close{
+      width: 280px;
+      margin: 20px auto;
+      &__bottun{
+        text-decoration: none;
+        color: $top_color;
+        margin-left: 115px;
       }
     }
   }
