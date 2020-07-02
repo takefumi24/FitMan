@@ -9,7 +9,7 @@
       height: 100%;
       width: 700px;
       margin: 0 auto;
-      background-color: $main_back;
+      background-color: rgba(255,255,255,0.897);
       padding-bottom: 50px;
       &__top {
         color: $font_color;
@@ -30,6 +30,8 @@
         .calculate_help {
           cursor: pointer;
           font-size: 15px;
+          color: blue;
+          font-weight: bold;
         }
       }
       &__goal {
@@ -55,6 +57,8 @@
           .calculate_help {
             cursor: pointer;
             font-size: 13px;
+            color: blue;
+            font-weight: bold;
           }
         }
         &__form {
@@ -101,7 +105,7 @@
       height: 100%;
       width: 350px;
       margin: 0 auto;
-      background-color: $main_back;
+      background-color: rgba(255,255,255,0.897);
       padding-bottom: 20px;
       &__top {
         color: $font_color;
@@ -122,6 +126,8 @@
         .calculate_help {
           cursor: pointer;
           font-size: 15px;
+          color: blue;
+          font-weight: bold;
         }
       }
       &__goal {
@@ -147,6 +153,8 @@
           .calculate_help {
             cursor: pointer;
             font-size: 13px;
+            color: blue;
+            font-weight: bold;
           }
         }
         &__form {

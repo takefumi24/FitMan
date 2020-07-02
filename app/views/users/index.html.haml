@@ -10,7 +10,7 @@
 
   .main
     .main__top
-      コンテンツ
+      〜Menu〜
     .main__center
       .main__center__content
         .main__center__content--image
@@ -18,7 +18,7 @@
         .main__center__content--name
           フード登録
         .main__center__content--text
-          食べ物を選択するだけで簡単に一日の摂取カロリーが分かります。
+          食べ物を選択するだけで簡単に<br>1日の摂取カロリーが分かります。
         .main__center__content--btn
           = link_to foods_path do
             %button.btn フード登録へ
@@ -29,21 +29,6 @@
           カロリー計算
         .main__center__content--text
           消費カロリー・目標体重・目標期間から、必要なカロリー摂取量を計算します。
-        - if user_signed_in?
-          .main__center__content--btn
-            = link_to new_user_data_path do
-              %button.btn カロリー計算へ
-        - else
           .main__center__content--btn
             = link_to calculation_records_path do
               %button.btn カロリー計算へ
-      .main__center__content
-        .main__center__content--image
-          = image_tag "diary.jpg", size:"140x140", class:"icon"
-        .main__center__content--name
-          記録
-        .main__center__content--text
-          目標体重や消費カロリー、これまでの摂取カロリーの記録を確認できます。
-        .main__center__content--btn
-          = link_to "#" do
-            %button.btn 記録へ

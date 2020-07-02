@@ -39,7 +39,7 @@
       background-color: $sub_color;
       padding-bottom: 200px;
       &__top {
-        color: $font_color;
+        color: #378ad2;
         height: 100px;
         width: 127px;
         margin: 0 auto;
@@ -72,8 +72,11 @@
             font-weight: bold;
           }
           &--text {
+            width: 240px;
             margin-top: 20px;
             color: $font_color;
+            text-align: left;
+            font-size: 15px;
           }
           &--btn {
             margin-top: 40px;
@@ -85,6 +88,7 @@
               line-height: 38px;
               cursor: pointer;
               color: $font_color;
+              background-color: lemonchiffon;
             }
           }
         }
@@ -113,11 +117,12 @@
           &--top {
             font-size: 30px;
             font-weight: bold;
+            text-align: center;
           }
           &--center {
             margin-top: 10px;
-            margin-left: 10px;
             font-size: 13px;
+            text-align: center;
           }
         }
         &__right {
@@ -134,7 +139,7 @@
       padding-top: 50px;
       padding-bottom: 90px;
       &__top {
-        color: $font_color;
+        color: #378ad2;
         text-align: center;
         line-height: 80px;
         font-size: 22px;
@@ -169,6 +174,7 @@
             margin-top: 10px;
             color: $font_color;
             font-size: 12px;
+            text-align: left;
           }
           &--btn {
             margin-top: 10px;
@@ -180,7 +186,7 @@
               line-height: 28px;
               cursor: pointer;
               color: $font_color;
-              background-color: white;
+              background-color: lemonchiffon;;
             }
           }
         }

@@ -135,4 +135,12 @@ $(function () {
       $('#new_food_registration').off();
     })
   }
+  // 閉じるボタンクリック
+  $('.modal_foods__close__bottun').click(function () {
+    $('.modal-overlay').fadeOut("fast");
+    $('.modal_foods').fadeOut("fast");
+    $('.modal_new').fadeOut("fast");
+    $('form')[0].reset();
+    $('#new_food_registration').off();
+  });
 });
