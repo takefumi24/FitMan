@@ -10,8 +10,8 @@
       height: 100%;
       width: 700px;
       margin: 0 auto;
-      background-color: $main_back;
-      padding-bottom: 50px;
+      background-color: rgba(255,255,255,0.897);
+      padding-bottom: 80px;
       &__top {
         color: $font_color;
         height: 90px;
@@ -23,23 +23,25 @@
         margin-bottom: 40px;
       }
       &__nutrition {
-        width: 46.5%;
+        width: 331px;
         margin: 0 0 0 auto;
         display: flex;
         &__block {
-          height: 70px;
-          width: 60px;
+          height: 60px;
+          width: 62px;
           background-color:$main_color;
           border-right: solid thin $main_back;
           text-align: center;
           .ja {
-            padding: 5px 5px 0;
-            font-size: 14px;
+            font-size: 12px;
+            font-weight: bold;
             color: white;
+            line-height: 25px;
           }
           .eng {
-            color: rgb(189, 187, 187);
+            color: #e2e0dd;
             font-size: 13px;
+            font-weight: bold;
           }
         }
       }
@@ -97,7 +99,7 @@
           &--num {
             width: 60px;
             text-align: center;
-            border-right: solid thin $main_back;
+            border-right: solid thin rgba(255,255,255,0.897);
             color: $top_color;
             padding-left: 1px;
           }
@@ -115,7 +117,7 @@
         }
       }
       &__all {
-        width: 574px;
+        width: 625px;
         height: 30px;
         line-height: 35px;
         padding-left: 20px;
@@ -124,20 +126,34 @@
         font-size: 13px;
         font-weight: bold;
         &__text {
-          width: 50px;
-          margin-left: 270px;
+          width: 51px;
+          margin-left: 257px;
           font-size:15px;
         }
         &__data {
           background-color: $food_back;
           display: flex;
           &--num {
-            width: 60px;
+            width: 63px;
             text-align: center;
             border-right: solid thin $main_back;
             border-bottom: solid thin $main_back;
-            color: $top_color;
+            color: #0c479e;
+            font-size: 15px;
+            font-weight: bold;
           }
+        }
+      }
+      &__output {
+        width: 150px;
+        margin: 70px auto 0;
+        &__csv {
+          width: 150px;
+          height: 30px;
+          background-color: $main_color;
+          color: white;
+          font-weight: bold;
+          font-size: 15px;
         }
       }
     }
@@ -157,7 +173,7 @@
       height: 100%;
       width: 350px;
       margin: 0 auto;
-      background-color: $main_back;
+      background-color: rgba(255,255,255,0.897);
       padding-bottom: 50px;
       &__top {
         color: $font_color;
@@ -180,13 +196,15 @@
           border-right: solid thin $main_back;
           text-align: center;
           .ja {
-            padding: 5px 5px 0;
             font-size: 10px;
+            font-weight: bold;
             color: white;
+            line-height: 15px;
           }
           .eng {
-            color: rgb(189, 187, 187);
+            color: #e2e0dd;
             font-size: 9px;
+            font-weight: bold;
           }
         }
       }
@@ -245,7 +263,7 @@
           &--num {
             width: 45px;
             text-align: center;
-            border-right: solid thin $main_back;
+            border-right: solid thin rgba(255,255,255,0.897);
             color: $top_color;
             padding-left: 1px;
           }
@@ -285,8 +303,20 @@
             text-align: center;
             border-right: solid thin $main_back;
             border-bottom: solid thin $main_back;
-            color: $top_color;
+            color: #0c479e;
           }
+        }
+      }
+      &__output {
+        width: 150px;
+        margin: 70px auto 0;
+        &__csv {
+          width: 150px;
+          height: 30px;
+          background-color: $main_color;
+          color: white;
+          font-weight: bold;
+          font-size: 15px;
         }
       }
     }
