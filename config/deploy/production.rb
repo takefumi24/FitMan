@@ -20,7 +20,9 @@
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
-server '18.177.203.121', user: 'ec2-user', roles: %w{app db web}
+server '18.177.203.121', user: 'takefumi', roles: %w{app db web}
+
+set :ssh_options, keys: '~/.ssh/FitMan_key_rsa'
 
 
 # Configuration
