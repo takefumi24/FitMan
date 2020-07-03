@@ -52,6 +52,7 @@ GEM
       io-like (~> 0.3.0)
     arel (9.0.0)
     bcrypt (3.1.13)
+    bcrypt_pbkdf (1.0.1)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -266,6 +267,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_hash
+  bcrypt_pbkdf
   bootsnap (>= 1.1.0)
   byebug
   capistrano
