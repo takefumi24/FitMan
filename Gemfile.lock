@@ -101,6 +101,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    ed25519 (1.2.4)
     erb2haml (0.1.5)
       html2haml
     erubi (1.9.0)
@@ -279,6 +280,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  ed25519
   erb2haml
   font-awesome-sass
   haml-rails
