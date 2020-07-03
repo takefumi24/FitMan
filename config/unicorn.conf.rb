@@ -2,9 +2,9 @@ $worker  = 2
 $timeout = 30
 app_path =  "/var/www/FitMan"
 $app_dir = "#{app_path}/current"
-$listen  = File.expand_path 'shared/tmp/sockets/.unicorn.sock', $app_path
-$pid     = File.expand_path 'shared/tmp/pids/unicorn.pid', $app_path
-$std_log = File.expand_path 'shared/log/unicorn.log', $app_path
+$listen  = File.expand_path 'shared/tmp/sockets/.unicorn.sock', app_path
+$pid     = File.expand_path 'shared/tmp/pids/unicorn.pid', app_path
+$std_log = File.expand_path 'shared/log/unicorn.log', app_path
 
 worker_processes  $worker
 working_directory $app_dir
